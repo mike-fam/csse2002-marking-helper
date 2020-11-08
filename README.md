@@ -32,7 +32,7 @@ optional arguments:
 
 to see all the options. Normally you just need to provide the bundle directory for this to work.
 
-This script will loop through all the assignments in the bundle directory and open each of them in your IDE. After finishing marking an assignment, the next one will be opened.
+This script will loop through all the assignments in the bundle directory and open each of them along with the style files in your IDE. After finishing marking an assignment, the next one will be opened. _You should only do this __after__ generating all the comments_.
 
  If you have marked N assignments, specify the `-d` or `--done` option. `--ide` is your editor of choice, by default this is set to `code`, but you can use for instance `subl` or `atom`, remember to install the shell command beforehand if needed. Vim doesn't work sorry vim nerdies :(. If you want the script to ask for your confirmation before moving on to the next assignment, specify `-c`.
 
