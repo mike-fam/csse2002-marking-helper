@@ -9,7 +9,7 @@ def set_up_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("bundle", type=str)
     parser.add_argument("-d", "--done", type=int, default=0)
-    parser.add_argument("--ide", type=str, default="code", const="code")
+    parser.add_argument("--ide", nargs="?", type=str, default="code", const="code")
     parser.add_argument("-m", "--merge", action="store_true")
     parser.add_argument("-i", "--ignore-merge", nargs="*", action="extend")
     return parser.parse_args()
